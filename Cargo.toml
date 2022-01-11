@@ -1,0 +1,22 @@
+[package]
+name = "rocket-syntaxset-fairing"
+version = "0.1.0"
+edition = "2018"
+license = "MIT"
+authors = [ "Gabriel Fontes <eu@misterio.me>" ]
+description = "A rocket fairing for managing syntect syntax sets on runtime"
+readme = "README.md"
+repository = "https://github.com/misterio77/rocket-syntaxset-fairing"
+categories = [ "development-tools", "web-programming" ]
+keywords = [ "rocket", "syntect", "fairing" ]
+
+[dependencies.rocket]
+version = "0.5.0-rc.1"
+
+[dependencies.syntect]
+version = "4.6"
+default-features = false
+features = [ "parsing", "regex-onig", "yaml-load" ]
+
+[dependencies.normpath]
+version = "0.3"
